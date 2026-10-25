@@ -8,9 +8,11 @@ I built this application to keep conversations with several language models in o
 
 The application sends prompts to the models, keeps their conversation histories, and exports responses for later analysis. Android testing, collection of runtime evidence, and weighted assessment of the responses were carried out separately.
 
-## Running locally
+## Running the application locally
 
-You need Node.js 22.12 or later and npm. From the directory containing `package.json`, install the dependencies:
+If you would like to run the application yourself, follow the steps below. You will need Node.js 22.12 or later, npm, and your own API keys for the configured providers.
+
+Open a terminal in the directory containing `package.json` and install the dependencies:
 
 ```
 npm ci
@@ -82,7 +84,7 @@ This version includes changes to the interface and frontend dependencies made af
 
 The configured models reflect the study. Some model versions or provider configurations may have since been renamed, deprecated, restricted to particular accounts, or removed. The article already notes that the original Llama and Qwen serving configurations were unavailable for the repeated experiments.
 
-Before running a new experiment, check the current model catalogue and API documentation of each provider. Adapt the application to the models actually available through the APIs you intend to use. A valid API key alone does not guarantee access to a particular model: account permissions, quotas and request limits also apply. Availability of a free endpoint is not guaranteed.
+If you plan to use the application for your own experiments, first check the current model catalogue and API documentation of each provider. Adapt the application to the models actually available through the APIs you intend to use. A valid API key alone does not guarantee access to a particular model: account permissions, quotas and request limits also apply. Availability of a free endpoint is not guaranteed.
 
 For a replacement model using an existing provider integration, update the following locations in `src/App.jsx`:
 
