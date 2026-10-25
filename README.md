@@ -80,8 +80,6 @@ For the study's RQ1/RQ2 and RQ3 system prompts and application-specific prompts,
 
 ## About this version
 
-This version includes changes to the interface and frontend dependencies made after the experiments.
-
 The configured models reflect the study. Some model versions or provider configurations may have since been renamed, deprecated, restricted to particular accounts, or removed. The article already notes that the original Llama and Qwen serving configurations were unavailable for the repeated experiments.
 
 If you plan to use the application for your own experiments, first check the current model catalogue and API documentation of each provider. Adapt the application to the models actually available through the APIs you intend to use. A valid API key alone does not guarantee access to a particular model: account permissions, quotas and request limits also apply. Availability of a free endpoint is not guaranteed.
