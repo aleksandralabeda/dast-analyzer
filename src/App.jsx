@@ -131,7 +131,6 @@ const queryModel = async (modelId, prompt, conversationHistory = [], customSyste
     }
 
 // OPENROUTER
-// OPENROUTER
 if (modelId.startsWith('openrouter')) {
   const modelMap = {
     'openrouter-trinity': 'arcee-ai/trinity-large-preview:free',
@@ -389,7 +388,7 @@ const saveCurrentSession = useCallback(() => {
   if (confirm('Are you sure you want to delete ALL history? This cannot be undone.')) {
     setAnalysisHistory([]);
     localStorage.removeItem('dast-analysis-history');
-    console.log('🗑️ All history cleared');
+    console.log('All history cleared');
   }
 };
 
@@ -973,7 +972,7 @@ const saveCurrentSession = useCallback(() => {
 
                     <div>
                       <p className="text-base text-zinc-300 uppercase font-semibold mb-2">
-                        ✅ Mocne strony
+                         Mocne strony
                       </p>
                       <div className="space-y-1 max-h-32 overflow-y-auto">
                         {diff.strengths.map((strength, i) => (
@@ -986,7 +985,7 @@ const saveCurrentSession = useCallback(() => {
 
                     <div>
                       <p className="text-base text-zinc-300 uppercase font-semibold mb-2">
-                        ⚠️ Słabe strony
+                         Słabe strony
                       </p>
                       <div className="space-y-1 max-h-32 overflow-y-auto">
                         {diff.weaknesses.map((weakness, i) => (
@@ -999,7 +998,7 @@ const saveCurrentSession = useCallback(() => {
 
                     <div>
                       <p className="text-base text-zinc-300 uppercase font-semibold mb-2">
-                        🔍 Unique Content ({diff.unique.length})
+                         Unique Content ({diff.unique.length})
                       </p>
                       {diff.unique.length > 0 ? (
                         <div className="space-y-2 max-h-48 overflow-y-auto">
