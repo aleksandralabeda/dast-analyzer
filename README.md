@@ -6,6 +6,8 @@ I built this application to keep conversations with several language models in o
 
 [https://doi.org/10.3390/electronics15102106](https://doi.org/10.3390/electronics15102106)
 
+The article forms the basis of my bachelor's thesis in Cybersecurity at Warsaw University of Technology, supervised by Mariusz Sepczuk.
+
 The application sends prompts to the models, keeps their conversation histories, and exports responses for later analysis. Android testing, collection of runtime evidence, and weighted assessment of the responses were carried out separately.
 
 ## Running the application locally
